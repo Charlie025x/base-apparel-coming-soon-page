@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+:root {
+  --clr-desaturatedred: hsl(0, 36%, 70%);
+  --clr-softred: hsl(0, 93%, 68%);
+  --clr-darkgrayishred: hsl(0, 6%, 24%);
+  --gnt-desaturatedred: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --gnt-softred: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-image: var(--gnt-desaturatedred);
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 5em;
+  text-transform: uppercase;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
