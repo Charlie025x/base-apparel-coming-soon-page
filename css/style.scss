@@ -35,25 +35,24 @@ body {
 .sign-up {
   margin: 4em 2em;
   text-align: center;
-}
-
-h1 {
-  font-size: 3em;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: var(--clr-darkgrayishred);
-  letter-spacing: .2em;
-  margin-bottom: 2rem;
-  span {
+  h1 {
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--clr-darkgrayishred);
+    letter-spacing: .2em;
+    margin-bottom: 2rem;
+    span {
+      color: var(--clr-desaturatedred);
+      font-weight: 300;
+    }
+  }
+  p {
+    margin-bottom: 2rem;
     color: var(--clr-desaturatedred);
-    font-weight: 300;
   }
 }
 
-p {
-  margin-bottom: 2rem;
-  color: var(--clr-desaturatedred);
-}
 
 form {
   display: inline-flex;

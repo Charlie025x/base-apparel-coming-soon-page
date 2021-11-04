@@ -38,7 +38,7 @@ body {
   text-align: center;
 }
 
-h1 {
+.sign-up h1 {
   font-size: 3em;
   font-weight: 600;
   text-transform: uppercase;
@@ -47,12 +47,12 @@ h1 {
   margin-bottom: 2rem;
 }
 
-h1 span {
+.sign-up h1 span {
   color: var(--clr-desaturatedred);
   font-weight: 300;
 }
 
-p {
+.sign-up p {
   margin-bottom: 2rem;
   color: var(--clr-desaturatedred);
 }
