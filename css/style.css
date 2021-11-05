@@ -11,34 +11,43 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   background-image: var(--gnt-desaturatedred);
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  max-width: 425px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   margin: 2em;
   width: 30%;
 }
 
 .hero-img {
-  width: calc(100vw - 4em);
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero-img .mobile-img {
+  max-width: 425px;
+}
+
+.hero-img .desktop-img {
+  display: none;
 }
 
 .sign-up {
   margin: 4em 2em;
   text-align: center;
+  max-width: 425px;
 }
 
-h1 {
+.sign-up h1 {
   font-size: 3em;
   font-weight: 600;
   text-transform: uppercase;
@@ -47,12 +56,12 @@ h1 {
   margin-bottom: 2rem;
 }
 
-h1 span {
+.sign-up h1 span {
   color: var(--clr-desaturatedred);
   font-weight: 300;
 }
 
-p {
+.sign-up p {
   margin-bottom: 2rem;
   color: var(--clr-desaturatedred);
 }
@@ -69,7 +78,6 @@ form {
   background-color: transparent;
   border-radius: 2em;
   opacity: 1;
-  border: 1px var(--clr-desaturatedred) solid;
   padding-top: .8rem;
   padding-bottom: .8rem;
   padding-left: 1.5rem;
@@ -137,5 +145,40 @@ form {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media only screen and (min-width: 700px) {
+  .grid {
+    max-width: 2000px;
+    height: 100%;
+    -ms-grid-columns: 6fr 4fr;
+        grid-template-columns: 6fr 4fr;
+  }
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1 / 4;
+  }
+  .hero-img .mobile-img {
+    display: none;
+  }
+  .hero-img .desktop-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .logo {
+    margin-left: 20%;
+    margin-top: 3rem;
+  }
+  .sign-up {
+    text-align: start;
+    margin-left: 20%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
